@@ -1,0 +1,82 @@
+<!-- invoice.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Invoice</title>
+  <style>
+    /* CSS */
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Invoice</h2>
+    <table>
+      <tr>
+        <th>Nama</th>
+        <td id="nama"></td>
+      </tr>
+      <tr>
+        <th>No HP</th>
+        <td id="no_hp"></td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td id="email"></td>
+      </tr>
+      <tr>
+        <th>Alamat</th>
+        <td id="alamat"></td>
+      </tr>
+      <tr>
+        <th>Size</th>
+        <td id="size"></td>
+      </tr>
+      <tr>
+        <th>Quantity</th>
+        <td id="qty"></td>
+      </tr>
+   
+    </table>
+
+    <script>
+      // JavaScript
+      const pembelian = JSON.parse(localStorage.getItem('pembelian'));
+
+      document.getElementById('nama').textContent = pembelian.nama;
+      document.getElementById('no_hp').textContent = pembelian.no_hp;
+      document.getElementById('email').textContent = pembelian.email;
+      document.getElementById('alamat').textContent = pembelian.alamat;
+      document.getElementById('size').textContent = pembelian.size;
+      document.getElementById('qty').textContent = pembelian.qty;
+
+    </script>
+  </div>
+</body>
+</html>

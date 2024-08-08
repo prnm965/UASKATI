@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual Beli Barang</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+
+        .content {
+            width: 80%;
+            padding: 20px;
+        }
+
+        .produk {
+            display: inline-block;
+            width: 25%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .produk img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .produk h2 {
+            margin-top: 0;
+        }
+
+        .produk p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Kategori</h2>
+            <ul>
+                <li><a href="adidas.html">Adidas</a></li>
+                <li><a href="puma.html">Puma</a></li>
+                <li><a href="stoneisland.html">Stone Island</a></li>
+                <li><a href="cp.html">CP Company</a></li>
+                <li><a href="reebok.html">Reebok</a></li>
+                <li><a href="beranda.html">Home</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Adidas</h1>
+            <div class="produk">
+                <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/12/16/914ee21f-c4ee-43fa-8dfe-4668d8154990.jpg" alt="Adidas Spezial Malmo" width="500px">
+                <h2>Adidas Handball Spezial Malmo</h2>
+                <p>Harga: Rp.1.850.000</p>
+                <button type="button" class="buy" onclick="beliSekarang()">Beli Sekarang</button>
+
+                <script>
+                function beliSekarang() {
+                  window.location.href = "buy.html";
+                }
+               </script>
+            </div>
+            <div class="produk">
+                <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/2/29/c5f929ae-f75b-4ed4-a96e-53f576010e6f.jpg" alt="Produk 2" width="500px">
+                <h2>Adidas Island Series Bali</h2>
+                <p>Harga: Rp 3.250.000</p>
+                <button type="button" class="buy" onclick="beliSekarang()">Beli Sekarang</button>
+
+                <script>
+                function beliSekarang() {
+                  window.location.href = "buy.html";
+                }
+               </script>
+            </div>
+            <div class="produk">
+                <img src="liverpool.jpg" alt="Adidas Liverpool">
+                <h2>Adidas City Series Liverpool</h2>
+                <p>Harga: Rp 6.150.000</p>
+                <button type="button" class="buy" onclick="beliSekarang()">Beli Sekarang</button>
+
+                <script>
+                function beliSekarang() {
+                  window.location.href = "buy.html";
+                }
+               </script>
+            </div>
+            <div class="produk">
+                <img src="sl72 multicolor.jpeg" alt="Adidas SL72 multicolor">
+                <h2>Adidas SL 72 multicolor</h2>
+                <p>Harga: Rp 1.400.000</p>
+                <button type="button" class="buy" onclick="beliSekarang()">Beli Sekarang</button>
+
+                <script>
+                function beliSekarang() {
+                  window.location.href = "buy.html";
+                }
+               </script>
+            </div>
+            <div class="produk">
+                <img src="gezelle pink.jpg" alt="Adidas Gazelle indoor pink">
+                <h2>Adidas Gazelle indoor pink</h2>
+                <p>Harga: 1.700.000</p>
+                <button type="button" class="buy" onclick="beliSekarang()">Beli Sekarang</button>
+
+                <script>
+                function beliSekarang() {
+                  window.location.href = "buy.html";
+                }
+               </script>
+            </div>
+            <div class="produk">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxwF93qIyVvlVeTmQGiqM037V5xTsU31xaBg&s" alt="Adidas Birmingham 1/500 Limited Edition">
+                <h2>Adidas Birmingham 1/500 </h2>
+                <p>Harga: 12.700.000</p>
+                <button type="button" class="buy" onclick="beliSekarang()">Beli Sekarang</button>
+
+                <script>
+                function beliSekarang() {
+                  window.location.href = "buy.html";
+                }
+               </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
